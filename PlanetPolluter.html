@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Christian Kuss</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Cinzel|Raleway" rel="stylesheet">
+    <script src="style.js"></script>
+    <link rel="icon" href="img/HomePage/mylogo.png">
+    <link rel="stylesheet" href="style.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112798738-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'UA-112798738-1');
+    </script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="PlanetPolluter/TemplateData/style.css">
+    <script src="PlanetPolluter/TemplateData/UnityProgress.js"></script>
+    <script src="PlanetPolluter/Build/UnityLoader.js"></script>
+    <script>
+        var gameInstance = UnityLoader.instantiate("gameContainer", "PlanetPolluter/Build/PlanetPolluter.json", {onProgress: UnityProgress});
+    </script>
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html"><img src="img/HomePage/mylogo.png" id="mylogo"></a>
+    </div>
+    <div class="collapse navbar-collapse navbar-expand-lg" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right" id="navbuttons">
+            <li><a href="index.html">ABOUT</a></li>
+            <li><a href="index.html">PORTFOLIO</a></li>
+        </ul>
+    </div>
+</nav>
+<div class="height container-fluid" id="spaceappsimg">
+    <div class="text-center makefit">
+        <h1>
+            Planet Polluter
+        </h1>
+    </div>
+    <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-10">
+            <div class="webgl-content">
+                <div id="gameContainer" style="max-width: 80%; height: auto;"></div>
+                <div class="footer" style="max-width: 80%">
+                    <div class="webgl-logo"></div>
+                    <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <br>
+        <br>
+        <div class="col-sm-12">
+            <div class="pback">
+                <p>
+                    This project was completed by Ryan Lung, Brock Fenbert, Blake Mchale, Josh Field, and myself
+                    as part of the 2018 NASA Space Apps Hackathon hosted by Binnovative. The idea of Planet Polluter was
+                    inspired by Plague Inc. a game where you try and infect the entire world. In our version, the player
+                    attempts to pollute the entire world. In order to win, one has to reach the CO2 levels that are
+                    present
+                    in 2018 before the time reaches 2018.
+                </p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <br>
+        <br>
+        <div class="col-sm-4">
+            <img src="img/spaceapps/coding.jpg" alt="Hacking Aroung" class="pillpic">
+        </div>
+        <div class="col-sm-8">
+            <div class="pback">
+                <p>
+                    The game incorporates data from NASA's website and compares your current level of carbon dioxide
+                    throughout the game with the actual data that was present in the atmosphere that year. Our goal for
+                    the game was to raise awareness about the effects of carbon pollution and some of the major causes.
+                    <br>
+                    ***Note: Game is a very basic prototype***
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="pback">
+                <p>
+                    Our real goal at the end of the day was to learn Unity and C# which we did build some foundations
+                    in.
+                    <br>
+                    Here are my team members websites:
+                </p>
+                <table>
+                    <tr>
+                        <th>Josh Field</th>
+                        <th><a href="http://joshafield.com" class="link" target="_blank">http://joshafield.com</a></th>
+                    </tr>
+                    <tr>
+                        <th>Blake Mchale</th>
+                        <th><a href="http://blakemchale.com" class="link" target="_blank">http://blakemchale.com</a></th>
+                    </tr>
+                    <tr>
+                        <th>Brock Fenbert</th>
+                        <th><a href="http://brockfenbert.com" class="link" target="_blank">http://brockfenbert.com</a></th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <img src="img/spaceapps/award.jpg" alt="Award" class="pillpic">
+        </div>
+    </div>
+</div>
+
+<footer class="text-center">
+    <a href="#myPage" title="To Top">
+        <span class="glyphicon glyphicon-chevron-up"></span>
+    </a>
+</footer>
+</body>
+</html>
