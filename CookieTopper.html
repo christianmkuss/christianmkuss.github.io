@@ -11,13 +11,17 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Cinzel|Raleway" rel="stylesheet">
     <script src="style.js"></script>
-    <link rel="icon" href="img/HomePage/mylogo.png">
+    <link rel="icon" href="resources/img/HomePage/mylogo.png">
     <link rel="stylesheet" href="style.css">
-        <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112798738-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
         gtag('js', new Date());
 
         gtag('config', 'UA-112798738-1');
@@ -32,99 +36,49 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="index.html"><img src="img/HomePage/mylogo.png" id="mylogo"></a>
+        <a class="navbar-brand" href="index.html#myPage"><img src="resources/img/HomePage/mylogo.png" id="mylogo"></a>
     </div>
     <div class="collapse navbar-collapse navbar-expand-lg" id="myNavbar">
         <ul class="nav navbar-nav navbar-right" id="navbuttons">
-            <li><a href="index.html">ABOUT</a></li>
-            <li><a href="index.html">PORTFOLIO</a></li>
+            <li><a href="index.html#about">ABOUT</a></li>
+            <li><a href="index.html#portfolio">PORTFOLIO</a></li>
+            <li><a href="Blog.html">BLOG</a></li>
         </ul>
     </div>
 </nav>
-<div class="height container-fluid" id="cookieimg">
-    <div class="cd-container">
-        <div class="text-center makefit">
-            <h1>
-                Cookie Topper
-            </h1>
-        </div>
-        <div class="row">
-            <div class="col-sm-8">
-                <div class="pback">
-                <p>This project was completed by my classmate, Sean Healy, and I in the Project Lead the Way class
-                    Principles of Engineering.
-                    In this assignment we were tasked with topping a Chips Ahoy cookie with whip cream from a can.
-                    Supplied to us was a VEX
-                    Robotics kit and ROBOTC program. We started the process off with a few design sketches. All went
-                    well with the brainstorming
-                    process and we had a set plan. During the building process we had a slight setback trying to figure
-                    out how to
-                    actuate the top of the whip cream can. After coming up with a rack and pinion method to move the tip
-                    of the nozzle
-                    we started the final stage of construction. As shown in the video, motors move the conveyor belt
-                    which rotates
-                    under a color sensor. We ended up using a color sensor after trying to use a distance center due to
-                    the bounciness
-                    of the conveyor belt. This meant for calibration of the sensor to the color of the cookies.
+<div class="container-fluid" id="cookieimg">
+    <div class="img"></div>
+    <h1 class="text-center">
+        Cookie Topper
+    </h1>
+    <div class="row">
+        <div class="col-sm-10 col-sm-offset-1">
+            <div class="pback">
+                <p>
+                    This project was completed by Sean Healy and I as a part of our Project Lead the Way class,
+                    Principles of Engineering. In this assignment we were tasked with topping a Chips Ahoy cookie
+                    (because they need some extra flavor) with whip cream from a can. We were supplied a VEX Robotics
+                    kit and ROBOTC program (but it seems no one knows what those are). Probably the most challenging
+                    design aspect was to try and actually press the nozzle to dispense the whip cream. We did eventually
+                    come up with a rack and pinion method that worked decently well. You can see in the video below that
+                    what we needed was a way to separate the whip cream from the can so it did not hang. The rest of the
+                    device is pretty simple with motors moving the conveyor belt which passes the cookies under a color
+                    sensor. We did end up having to use a color sensor rather than a distance sensor due to the
+                    "bounciness" of the conveyor belt.
                 </p>
-                </div>
+                <p>
+                    I like to keep this project up because it was honestly one of my first notable engineering projects
+                    and it brings back good memories of eating lots of whip cream topped cookies.
+                </p>
             </div>
-            <div class="col-sm-4">
-                <video src="img/cookietopper/cookieTopper.mov" controls></video>
-            </div>
-        </div>
-        <br>
-        <br>
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-                <li data-target="#myCarousel" data-slide-to="3"></li>
-                <li data-target="#myCarousel" data-slide-to="4"></li>
-                <li data-target="#myCarousel" data-slide-to="5"></li>
-            </ol>
-
-            <!-- Wrapper for slides -->
-            <div class="row">
-                <div class="carousel-inner">
-                    <div class="item active">
-                        <img src="img/cookietopper/Picture1.png" alt="Picture1">
-                    </div>
-                    <div class="item">
-                        <img src="img/cookietopper/Picture2.png" alt="Picture2">
-                    </div>
-                    <div class="item">
-                        <img src="img/cookietopper/Picture3.png" alt="Picture3">
-                    </div>
-                    <div class="item">
-                        <img src="img/cookietopper/Picture5.png" alt="Picture5">
-                    </div>
-                    <div class="item">
-                        <img src="img/cookietopper/Picture6.png" alt="Picture6" class="toolong">
-                    </div>
-                    <div class="item">
-                        <img src="img/cookietopper/Picture7.png" alt="Picture7" class="toolong">
-                    </div>
-                </div>
-            </div>
-
-            <!-- Left and right controls -->
-            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right"></span>
-                <span class="sr-only">Next</span>
-            </a>
         </div>
     </div>
-    <br>
-    <br>
+    <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+            <video src="resources/img/cookietopper/cookieTopper.mov" controls></video>
+        </div>
+    </div>
 </div>
-
 <footer class="text-center">
     <a href="#myPage" title="To Top">
         <span class="glyphicon glyphicon-chevron-up"></span>

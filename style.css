@@ -13,10 +13,13 @@ body, html, main {
     -ms-overflow-style: none;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 p {
     font-family: 'Raleway', sans-serif;
     font-size: 20px;
-    font-weight: 500;
     color: #000000;
     text-decoration: none;
 }
@@ -25,16 +28,8 @@ p {
 .pback {
     background-color: rgba(255, 255, 255, .5);
     padding: 10px;
-    box-shadow: -8px 8px 5px rgba(1, 1, 1, 0.57);
 }
 
-.features {
-    font-family: 'Raleway', sans-serif;
-    font-size: 20px;
-    font-weight: 500;
-    color: #000000;
-}
-/* Removes text decoration */
 a, a:hover {
     text-decoration: none;
     color: #000000;
@@ -44,7 +39,6 @@ h1 {
     font-size: 30px;
     font-family: 'Cinzel', serif;
     color: #000000;
-    z-index: 5 !important;
     position: relative;
 }
 
@@ -52,27 +46,19 @@ video {
     max-width: 100%;
     height: auto;
     width: auto;
+}
+
+img, iframe, video, .pback {
     box-shadow: -8px 8px 5px rgba(1, 1, 1, 0.57);
 }
 
-img, iframe {
-    box-shadow: -8px 8px 5px rgba(1, 1, 1, 0.57);
-}
-
-/* Sets the height of each compartment to the height of the screen */
-.height {
-    min-height: 100%;
-}
-
-/* Pads left and right */
 .row {
-    padding: 0 35px 20px 35px;
+    padding: 0 4% 4% 4%;
 }
 
-/* Defines positioning and sizing of background images on main page */
 .img {
     margin: 0;
-    opacity: 0.5;
+    opacity: 0.6;
     color: #1f232e;
     width: 100%;
     height: auto;
@@ -83,7 +69,6 @@ img, iframe {
     min-height: 100%;
 }
 
-/* The wrapper around elements of each section */
 .container-fluid {
     position: relative;
     padding: 0;
@@ -91,11 +76,10 @@ img, iframe {
 }
 
 /* Creates extra space for nav bar */
-.container-fluid h1 {
+.container-fluid h1, .container h1 {
     padding-top: 3%;
 }
 
-/* Every button has these elements */
 .btn:hover {
     background-color: #253541;
     color: #ffffff;
@@ -108,60 +92,11 @@ img, iframe {
     text-decoration: none;
 }
 
-/***Navigation Bar***/
-
-.navbar {
-    background-color: rgba(0, 0, 0, 0);
-    z-index: 9999;
-    border: 0;
-    font-size: 12px !important;
-    letter-spacing: 4px;
-    border-radius: 0;
-}
-
-.nav li {
-    display: list-item;
-    margin-bottom: 0;
-}
-
-.navbar li a, .navbar .navbar-brand {
-    color: #ffffff !important;
-}
-
-.navbar-nav li a:hover, .navbar-nav li.active a {
-    color: #ffffff !important;
-    background-color: #000000 !important;
-}
-
-.navbar-default .navbar-toggle {
-    border-color: transparent;
-    color: #ffffff !important;
-}
-
-.navbar ul {
-    margin-right: 2.5%;
-}
-
-#mylogo {
-    max-height: 150%;
-    max-width: 150%;
-    width: auto;
-    height: auto;
-    opacity: .5;
-    box-shadow: none !important;
-
-}
-
-#mylogo:hover {
-    opacity: 1;
-}
-
 /***Opening Page***/
 
 #opening .img {
-    background: url("img/Backgrounds/mountains.jpg") center center/cover no-repeat fixed;
+    background: url("resources/img/Backgrounds/mountains.jpg") center center/cover no-repeat fixed;
     top: 0;
-    position: absolute;
 }
 
 .jumbotron {
@@ -192,13 +127,13 @@ img, iframe {
 /***About Section***/
 
 #about .img {
-    background: url("img/Backgrounds/forestedit.jpg") center center/cover no-repeat fixed;
+    background: url("resources/img/Backgrounds/forestedit.jpg") center center/cover no-repeat fixed;
 }
 
 /* Picture of me */
 
 #about .imgMe {
-    background: url("img/HomePage/christiankuss.jpg") center/cover no-repeat;
+    background: url("resources/img/HomePage/christiankuss.jpg") center/cover no-repeat;
     height: 80%;
     box-shadow: -8px 8px 5px rgba(1, 1, 1, 0.57);
 }
@@ -206,7 +141,7 @@ img, iframe {
 /***Portfolio Section***/
 
 #portfolio .img {
-    background: url("img/Backgrounds/water.jpg") center center/cover no-repeat fixed;
+    background: url("resources/img/Backgrounds/water.jpg") center center/cover no-repeat fixed;
 }
 
 /***Hover Portfolio***/
@@ -229,35 +164,156 @@ img, iframe {
 .changeableBackground {
     height: 80%;
     width: 60%;
-    background: url("img/Backgrounds/Colchuck Lake (2).jpg") center center/cover no-repeat;
+    background: url("resources/img/Backgrounds/Colchuck Lake (2).jpg") center center/cover no-repeat;
     overflow: hidden;
     box-shadow: -8px 8px 5px rgba(1, 1, 1, 0.57);
 }
 
 /* Changes the image displayed to the correct one when hovered */
 .sumofy {
-    background: url("img/SumoBot/sumo.JPG") center center/cover no-repeat;
+    background: url("resources/img/SumoBot/sumo.JPG") center center/cover no-repeat;
     overflow: hidden;
 }
 
 .alexafy {
-    background: url("img/alexa.jpg") center center/cover no-repeat;
+    background: url("resources/img/alexa.jpg") center center/cover no-repeat;
     overflow: hidden;
 }
 
 .cookiefy {
-    background: url("img/cookietopper/cookietopperthumbnail.jpg") center center/cover no-repeat;
+    background: url("resources/img/cookietopper/cookietopperthumbnail.jpg") center center/cover no-repeat;
     overflow: hidden;
 }
 
 .dispensery {
-    background: url("img/PillDispenser/dispensery.jpg") center center/cover no-repeat;
+    background: url("resources/img/PillDispenser/dispensery.jpg") center center/cover no-repeat;
     overflow: hidden;
 }
 
 .spacify {
-    background: url("img/spaceapps/planetpolluter.JPG") left center/cover no-repeat;
+    background: url("resources/img/spaceapps/planetpolluter.JPG") left center/cover no-repeat;
     overflow: hidden;
+}
+
+/***Links***/
+
+.link, th {
+    padding-left: 15px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #000000;
+    text-decoration: none;
+}
+
+.link:hover {
+    font-weight: 600;
+}
+
+/***Space Apps HTML***/
+
+#spaceappsimg .img {
+    background: url("resources/img/spaceapps/spaceback.jpg") center center/cover no-repeat fixed;
+}
+
+/***Cookie Topper HTML***/
+
+#cookieimg .img{
+    background: url("resources/img/Backgrounds/forbidden_city.jpg") center center/cover no-repeat fixed;
+}
+
+/***Alexa Skill HTML***/
+
+#alexaimg .img {
+    background: url("resources/img/Backgrounds/nh_beach.jpg") center center/cover no-repeat fixed;
+}
+
+/***Sumo Bot HTML***/
+
+#sumoimg .img {
+    background: url("resources/img/Backgrounds/tokyoskyline.jpg") center center/cover no-repeat fixed;
+}
+
+/***Automatic Pill Dispenser HTML***/
+
+.pillpic {
+    max-height: 100%;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
+iframe {
+    margin-left: 10%;
+    min-height: 250px;
+    min-width: 80%;
+    height: inherit;
+    width: auto;
+}
+
+#pilldispenserimg .img {
+    background: url("resources/img/Backgrounds/greatwall.jpg") center center/cover no-repeat fixed;
+}
+
+/***Blog HTML***/
+
+#blogimg .img {
+    background: url("resources/img/Japan/meiji.jpg") center center/cover no-repeat fixed;
+    top: 0;
+}
+
+article p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    color: #000000;
+    text-decoration: none;
+}
+
+/***Navigation Bar***/
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 9999;
+    border: 0;
+    font-size: 12px;
+    letter-spacing: 4px;
+    border-radius: 0;
+}
+
+.nav li {
+    display: list-item;
+    margin-bottom: 0;
+}
+
+.navbar li a, .navbar .navbar-brand {
+    color: #ffffff !important;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    background-color: #000000 !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #ffffff !important;
+}
+
+.navbar ul {
+    margin-right: 2.5%;
+}
+
+#mylogo {
+    max-height: 150%;
+    max-width: 150%;
+    width: auto;
+    height: auto;
+    opacity: .5;
+    box-shadow: none !important;
+
+}
+
+#mylogo:hover {
+    opacity: 1;
 }
 
 /***Footer***/
@@ -288,13 +344,10 @@ footer {
 }
 
 .slide {
-    /* The name of the animation */
     animation-name: slide;
     -webkit-animation-name: slide;
-    /* The duration of the animation */
     animation-duration: 1s;
     -webkit-animation-duration: 1s;
-    /* Make the element visible */
     visibility: visible;
 }
 
@@ -377,242 +430,4 @@ footer {
     #mylogo {
         max-height: 100%;
     }
-}
-
-/***Links***/
-
-.link, th {
-    padding-left: 15px;
-    font-family: 'Raleway', sans-serif;
-    font-size: 20px;
-    font-weight: 500;
-    color: #000000;
-    text-decoration: none;
-}
-
-.link:hover {
-    font-weight: 600;
-}
-
-/***Space Apps HTML***/
-
-#spaceappsimg {
-    color: #000000;
-    background: url("img/spaceapps/spaceback.jpg") center center/cover no-repeat fixed;
-    width: 100%;
-}
-
-/***Cookie Topper HTML***/
-
-#cookieimg {
-    color: #000000;
-    background: url("img/Backgrounds/park.jpg") center center/cover no-repeat fixed;
-    width: 100%;
-}
-
-#myCarousel {
-    width: 500px;
-    margin-left: 30%;
-    min-height: 400px;
-}
-
-.carousel-inner img {
-    max-height: 400px;
-    max-width: 300px;
-    height: auto;
-    width: auto;
-    padding-left: 20%;
-}
-
-.item {
-    max-height: 700px !important;
-    height: auto;
-    width: auto;
-
-}
-
-/* For images too long for the container */
-.toolong {
-    padding-left: 3% !important;
-    max-width: 97% !important;
-}
-
-/***Alexa Skill HTML***/
-
-#alexaimg {
-    color: #000000;
-    background: url("img/Backgrounds/shillman.jpg") center center/cover no-repeat fixed;
-    width: 100%;
-}
-
-/***Sumo Bot HTML***/
-
-#sumoimg {
-    color: #000000;
-    background: url("img/Backgrounds/seattle.jpg") center center/cover no-repeat fixed;
-    width: 100%;
-}
-
-.sumopic {
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    transform: rotate(90deg);
-}
-
-#sumo4 video {
-    padding: 2% 10% 0 10%;
-}
-
-#sumo3 img {
-    -webkit-transform: rotate(0);
-    -moz-transform: rotate(0);
-    -ms-transform: rotate(0);
-    -o-transform: rotate(0);
-    transform: rotate(0);
-}
-
-a.lightbox img {
-    height: 200px;
-    margin: 94px 20px 20px 20px;
-}
-
-a.lightbox video {
-    margin-top: 25%;
-}
-
-/***Automatic Pill Dispenser HTML***/
-
-.pillpic {
-    max-height: 100%;
-    max-width: 100%;
-    height: auto;
-    width: auto;
-}
-
-iframe {
-    margin-left: 10%;
-    min-height: 250px;
-    min-width: 80%;
-    height: inherit;
-    width: auto;
-}
-
-#pilldispenserimg {
-    color: #000000;
-    background: url("img/Backgrounds/boston.jpg") center center/cover no-repeat fixed;
-    width: 100%;
-}
-
-/* Styles the lightbox, removes it from sight and adds the fade-in transition */
-
-.lightbox-target {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: rgba(0, 0, 0, .7);
-    opacity: 0;
-    -webkit-transition: opacity .5s ease-in-out;
-    -moz-transition: opacity .5s ease-in-out;
-    -o-transition: opacity .5s ease-in-out;
-    transition: opacity .5s ease-in-out;
-    overflow: hidden;
-}
-
-/* Styles the lightbox image, centers it vertically and horizontally, adds the zoom-in transition and makes it responsive using a combination of margin and absolute positioning */
-
-.lightbox-target img {
-    margin: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    max-height: 0;
-    max-width: 0;
-    box-shadow: 0 0 8px rgba(0, 0, 0, .3);
-    box-sizing: border-box;
-    -webkit-transition: .5s ease-in-out;
-    -moz-transition: .5s ease-in-out;
-    -o-transition: .5s ease-in-out;
-    transition: .5s ease-in-out;
-}
-
-/* Styles the close link, adds the slide down transition */
-
-a.lightbox-close {
-    display: block;
-    width: 50px;
-    height: 50px;
-    box-sizing: border-box;
-    background: white;
-    color: black;
-    text-decoration: none;
-    position: absolute;
-    top: 300px;
-    right: 20px;
-    -webkit-transition: .5s ease-in-out;
-    -moz-transition: .5s ease-in-out;
-    -o-transition: .5s ease-in-out;
-    transition: .5s ease-in-out;
-
-}
-
-/* Provides part of the "X" to eliminate an image from the close link */
-
-a.lightbox-close:before {
-    content: "";
-    display: block;
-    height: 30px;
-    width: 1px;
-    background: black;
-    position: absolute;
-    left: 26px;
-    top: 10px;
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
-}
-
-/* Provides part of the "X" to eliminate an image from the close link */
-
-a.lightbox-close:after {
-    content: "";
-    display: block;
-    height: 30px;
-    width: 1px;
-    background: black;
-    position: absolute;
-    left: 26px;
-    top: 10px;
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-}
-
-/* Uses the :target pseudo-class to perform the animations upon clicking the .lightbox-target anchor */
-
-.lightbox-target:target {
-    opacity: 1;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    z-index: 10000;
-}
-
-.lightbox-target:target img {
-    max-height: 70%;
-    max-width: 100%;
-    height: auto;
-    width: auto;
-}
-
-.lightbox-target:target a.lightbox-close {
-    top: 0;
-    right: 0;
 }

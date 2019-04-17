@@ -11,7 +11,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Cinzel|Raleway" rel="stylesheet">
     <script src="style.js"></script>
-    <link rel="icon" href="img/HomePage/mylogo.png">
+    <link rel="icon" href="resources/img/HomePage/mylogo.png">
     <link rel="stylesheet" href="style.css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112798738-1"></script>
@@ -45,24 +45,21 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="index.html"><img src="img/HomePage/mylogo.png" id="mylogo"></a>
+        <a class="navbar-brand" href="index.html#myPage"><img src="resources/img/HomePage/mylogo.png" id="mylogo"></a>
     </div>
     <div class="collapse navbar-collapse navbar-expand-lg" id="myNavbar">
         <ul class="nav navbar-nav navbar-right" id="navbuttons">
-            <li><a href="index.html">ABOUT</a></li>
-            <li><a href="index.html">PORTFOLIO</a></li>
+            <li><a href="index.html#about">ABOUT</a></li>
+            <li><a href="index.html#portfolio">PORTFOLIO</a></li>
+            <li><a href="Blog.html">BLOG</a></li>
         </ul>
     </div>
 </nav>
-<div class="height container-fluid" id="spaceappsimg">
-    <div class="text-center makefit">
-        <h1>
-            Planet Polluter
-        </h1>
-    </div>
+<div class="container-fluid" id="spaceappsimg">
+    <div class="img"></div>
+    <h1 class="text-center">Planet Polluter</h1>
     <div class="row">
-        <div class="col-sm-2"></div>
-        <div class="col-sm-10">
+        <div class="col-sm-10 col-sm-offset-2">
             <div class="webgl-content">
                 <div id="gameContainer" style="max-width: 80%; height: auto;"></div>
                 <div class="footer" style="max-width: 80%">
@@ -73,30 +70,18 @@
         </div>
     </div>
     <div class="row">
-        <br>
-        <br>
-        <div class="col-sm-12">
+        <div class="col-sm-4">
+            <img src="resources/img/spaceapps/coding.jpg" alt="Hacking Aroung" class="pillpic">
+        </div>
+        <div class="col-sm-8">
             <div class="pback">
                 <p>
                     This project was completed by Ryan Lung, Brock Fenbert, Blake Mchale, Josh Field, and myself
                     as part of the 2018 NASA Space Apps Hackathon hosted by Binnovative. The idea of Planet Polluter was
                     inspired by Plague Inc. a game where you try and infect the entire world. In our version, the player
-                    attempts to pollute the entire world. In order to win, one has to reach the CO2 levels that are
-                    present
-                    in 2018 before the time reaches 2018.
+                    attempts to pollute the planet to the levels in 2018. If the player fails to reach the same CO2
+                    levels by 2018, they lose.
                 </p>
-            </div>
-        </div>
-    </div>
-    <br>
-    <div class="row">
-        <br>
-        <br>
-        <div class="col-sm-4">
-            <img src="img/spaceapps/coding.jpg" alt="Hacking Aroung" class="pillpic">
-        </div>
-        <div class="col-sm-8">
-            <div class="pback">
                 <p>
                     The game incorporates data from NASA's website and compares your current level of carbon dioxide
                     throughout the game with the actual data that was present in the atmosphere that year. Our goal for
@@ -104,6 +89,11 @@
                     <br>
                     ***Note: Game is a very basic prototype***
                 </p>
+                <div class="row text-center">
+                    <a href="https://github.com/christianmkuss/SpaceAppsHackathon" target="_blank">
+                        <button type="button" class="btn btn-primary btn-lg">Space Apps Repository</button>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
@@ -116,28 +106,26 @@
                     <br>
                     Here are my team members websites:
                 </p>
-                <table>
-                    <tr>
-                        <th>Josh Field</th>
-                        <th><a href="http://joshafield.com" class="link" target="_blank">http://joshafield.com</a></th>
-                    </tr>
-                    <tr>
-                        <th>Blake Mchale</th>
-                        <th><a href="http://blakemchale.com" class="link" target="_blank">http://blakemchale.com</a></th>
-                    </tr>
-                    <tr>
-                        <th>Brock Fenbert</th>
-                        <th><a href="http://brockfenbert.com" class="link" target="_blank">http://brockfenbert.com</a></th>
-                    </tr>
-                </table>
+                <p>
+                    Josh Field: <a href="http://joshafield.com" class="link" target="_blank">http://joshafield.com</a>
+                </p>
+                <p>
+                    Blake Mchale: <a href="http://blakemchale.com" class="link"
+                                     target="_blank">http://blakemchale.com</a>
+                </p>
+                <p>
+                    Brock Fenbert: <a href="http://brockfenbert.com" class="link" target="_blank">http://brockfenbert.com</a>
+                </p>
+                <p>
+                    Ryan Lung: <a href="https://www.linkedin.com/in/ryan-lung/" class="link" target="_blank">https://www.linkedin.com/in/ryan-lung/</a>
+                </p>
             </div>
         </div>
         <div class="col-sm-6">
-            <img src="img/spaceapps/award.jpg" alt="Award" class="pillpic">
+            <img src="resources/img/spaceapps/award.jpg" alt="Award" class="pillpic">
         </div>
     </div>
 </div>
-
 <footer class="text-center">
     <a href="#myPage" title="To Top">
         <span class="glyphicon glyphicon-chevron-up"></span>

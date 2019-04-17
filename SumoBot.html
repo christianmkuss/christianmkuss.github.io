@@ -11,13 +11,17 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Cinzel|Raleway" rel="stylesheet">
     <script src="style.js"></script>
-    <link rel="icon" href="img/HomePage/mylogo.png">
+    <link rel="icon" href="resources/img/HomePage/mylogo.png">
     <link rel="stylesheet" href="style.css">
-        <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112798738-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
         gtag('js', new Date());
 
         gtag('config', 'UA-112798738-1');
@@ -31,27 +35,26 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="index.html"><img src="img/HomePage/mylogo.png" id="mylogo"></a>
+        <a class="navbar-brand" href="index.html#myPage"><img src="resources/img/HomePage/mylogo.png" id="mylogo"></a>
     </div>
     <div class="collapse navbar-collapse navbar-expand-lg" id="myNavbar">
         <ul class="nav navbar-nav navbar-right" id="navbuttons">
-            <li><a href="index.html">ABOUT</a></li>
-            <li><a href="index.html">PORTFOLIO</a></li>
+            <li><a href="index.html#about">ABOUT</a></li>
+            <li><a href="index.html#portfolio">PORTFOLIO</a></li>
+            <li><a href="Blog.html">BLOG</a></li>
         </ul>
     </div>
 </nav>
-<div class="height container-fluid" id="sumoimg">
-    <div class="cd-container">
-        <div class="text-center makefit">
-            <h1>
-                Sumo Bot
-            </h1>
-        </div>
-        <div class="row">
-            <div class="col-sm-1"></div>
-            <div class="col-sm-10">
-                <div class="pback">
-                <p>This project was an assignment for Cornerstone of Engineering. It was completed by Julian Lechner,
+<div class="container-fluid" id="sumoimg">
+    <div class="img"></div>
+    <h1 class="text-center">
+        Sumo Bot
+    </h1>
+    <div class="row">
+        <div class="col-sm-10 col-sm-offset-1">
+            <div class="pback">
+                <p>
+                    This project was an assignment for Cornerstone of Engineering. It was completed by Julian Lechner,
                     Reed Kellett, Stephen Zhou, and myself. This assignment proved to be much more challenging than face
                     value.
                     The assignment was broken into two parts. The first part was everyone had essentially the same robot
@@ -74,52 +77,19 @@
                     protective
                     white barrier around our robot so that when other robots attempted to attack us they would turn
                     away.
-                    This design feature proved useful on more than a few occasions.</p>
-                <p>After all the smoke and dust settled, our robot, named The Busa, came out on top.</p>
-                </div>
+                    This design feature proved useful on more than a few occasions.
+                </p>
+                <p>
+                    After all the smoke and dust settled, our robot, The Busa, came out on top.
+                </p>
             </div>
         </div>
     </div>
-    <div class="lightbox-target" id="sumo1">
-        <img src="img/SumoBot/IMG_7667.JPG" alt="Sumo Bot Picture" class="sumopic">
-        <a class="lightbox-close" href="#"></a>
-    </div>
-    <div class="lightbox-target" id="sumo2">
-        <img src="img/SumoBot/IMG_7668.JPG" alt="Sumo Bot Picture" class="sumopic">
-        <a class="lightbox-close" href="#"></a>
-    </div>
-    <div class="lightbox-target" id="sumo3">
-        <img src="img/SumoBot/IMG_7669.JPG" alt="Sumo Bot Picture" class="sumopic">
-        <a class="lightbox-close" href="#"></a>
-    </div>
-    <div class="lightbox-target" id="sumo4">
-        <video src="img/SumoBot/IMG_7683.mov" controls></video>
-        <a class="lightbox-close" href="#"></a>
-    </div>
     <div class="row">
-        <div class="col-sm-3">
-            <a class="lightbox" href="#sumo1">
-                <img src="img/SumoBot/IMG_7667.JPG" alt="Sumo Bot Picture" class="sumopic">
-            </a>
-        </div>
-        <div class="col-sm-3">
-            <a class="lightbox" href="#sumo3">
-                <img src="img/SumoBot/IMG_7669.JPG" alt="Sumo Bot Picture">
-            </a>
-        </div>
-        <div class="col-sm-3">
-            <a class="lightbox" href="#sumo4">
-                <video src="img/SumoBot/IMG_7683.mov"></video>
-            </a>
-        </div>
-        <div class="col-sm-3">
-            <a class="lightbox" href="#sumo2">
-                <img src="img/SumoBot/IMG_7668.JPG" alt="Sumo Bot Picture" class="sumopic">
-            </a>
+        <div class="col-sm-6 col-sm-offset-3">
+            <video src="resources/img/SumoBot/demo_vid.mov" controls></video>
         </div>
     </div>
-    <br>
-    <br>
 </div>
 <footer class="text-center">
     <a href="#myPage" title="To Top">
