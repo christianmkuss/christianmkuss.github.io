@@ -16,18 +16,18 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112798738-1"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
+      window.dataLayer = window.dataLayer || [];
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
+      function gtag() {
+        dataLayer.push(arguments);
+      }
 
-        gtag('js', new Date());
+      gtag('js', new Date());
 
-        gtag('config', 'UA-112798738-1');
+      gtag('config', 'UA-112798738-1');
     </script>
 </head>
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<body id="myPage">
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -40,8 +40,18 @@
     <div class="collapse navbar-collapse navbar-expand-lg" id="myNavbar">
         <ul class="nav navbar-nav navbar-right" id="navbuttons">
             <li><a href="index.html#about">ABOUT</a></li>
-            <li><a href="index.html#portfolio">PORTFOLIO</a></li>
+            <li><a href="index.html#experience">EXPERIENCE</a></li>
+            <li class="project-dropdown">
+                <a href="index.html#projects">PROJECTS</a>
+                <div class="project-dropdown-content">
+                    <a href="PlanetPolluter.html">PLANET POLLUTER</a>
+                    <a href="PillDispenser.html">SMART PILL DISPENSER</a>
+                    <a href="SumoBot.html">SUMO BOT</a>
+                    <a href="CookieTopper.html">COOKIE TOPPER</a>
+                </div>
+            </li>
             <li><a href="Blog.html">BLOG</a></li>
+            <li><a href="resources/Kuss_Resume.pdf" target="_blank">R&#201;SUM&#201;</a></li>
         </ul>
     </div>
 </nav>
@@ -50,8 +60,21 @@
     <div class="container">
         <h1>Life in Japan</h1>
     </div>
+    <a class="dot" href="#june-blog"></a>
+    <a  class="dot" href="#april-blog"></a>
 </div>
-<article class="row">
+<article id="june-blog" class="row">
+    <header class="text-center">
+        <h1>June 2nd, 2019</h1>
+    </header>
+    <section style="height: 75vh" class="video-container col-sm-8 col-sm-offset-2">
+        <iframe src="https://www.youtube.com/embed/tce8O_WnqSg" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+        </iframe>
+    </section>
+</article>
+<article id="april-blog" class="row">
     <header class="text-center">
         <h1>April 16th, 2019</h1>
     </header>

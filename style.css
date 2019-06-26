@@ -19,20 +19,22 @@ body {
 
 p {
     font-family: 'Raleway', sans-serif;
-    font-size: 20px;
+    font-size: 3vmin;
     color: #000000;
     text-decoration: none;
-}
-
-/* White background behind text */
-.pback {
-    background-color: rgba(255, 255, 255, .5);
-    padding: 10px;
 }
 
 a, a:hover {
     text-decoration: none;
     color: #000000;
+}
+
+.pad {
+    padding-top: 2%;
+}
+
+.jumbotron h1 {
+    font-size: 10vmin;
 }
 
 h1 {
@@ -42,17 +44,12 @@ h1 {
     position: relative;
 }
 
-video {
-    max-width: 100%;
-    height: auto;
-    width: auto;
-}
-
-img, iframe, video, .pback {
+img, .video-container {
     box-shadow: -8px 8px 5px rgba(1, 1, 1, 0.57);
 }
 
 .row {
+    margin: 0;
     padding: 0 4% 4% 4%;
 }
 
@@ -69,25 +66,42 @@ img, iframe, video, .pback {
     min-height: 100%;
 }
 
+.home-sections {
+    position: relative;
+    padding: 0;
+    height: 106%;
+    text-align: center;
+}
+
+.home-section-body, .container-body {
+    padding: 0;
+    background-color: #ffffff;
+    position: relative;
+    overflow: hidden;
+}
+
+.container-body {
+    margin-top: 15vmin;
+    margin-bottom: 15vmin;
+}
+
+.home-section-body {
+    height: 85%;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
 .container-fluid {
     position: relative;
     padding: 0;
     min-height: 100%;
 }
 
-/* Creates extra space for nav bar */
-.container-fluid h1, .container h1 {
-    padding-top: 3%;
-}
-
-.btn:hover {
-    background-color: #253541;
-    color: #ffffff;
-}
 
 .btn {
-    background-color: transparent;
-    color: #000000;
+    background-color: #253541;
+    color: #ffffff;
     border: none;
     text-decoration: none;
 }
@@ -107,13 +121,13 @@ img, iframe, video, .pback {
 .jumbotron .container {
     position: relative;
     z-index: 2;
-    margin-top: 15%;
+    margin-top: 35vh;
 }
 
 /*** Logo buttons ***/
 .logo img {
-    max-height: 7%;
-    max-width: 7%;
+    max-height: 12vmin;
+    max-width: 12vmin;
     width: auto;
     height: auto;
     opacity: .5;
@@ -126,21 +140,38 @@ img, iframe, video, .pback {
 
 /***About Section***/
 
-#about .img {
+#about {
     background: url("resources/img/Backgrounds/forestedit.jpg") center center/cover no-repeat fixed;
 }
 
-/* Picture of me */
+.headshot {
+    border-radius: 50%;
+    height: 30%;
+}
 
-#about .imgMe {
-    background: url("resources/img/HomePage/christiankuss.jpg") center/cover no-repeat;
-    height: 80%;
-    box-shadow: -8px 8px 5px rgba(1, 1, 1, 0.57);
+#experience {
+    background: url("resources/img/Backgrounds/lake.jpg") center center/cover no-repeat fixed;
+}
+
+.work-experience-text {
+    padding-top: 2%;
+}
+
+.graph {
+    height: 50vmin;
+    width: auto;
+}
+
+.work-experience img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    border: solid #000000 1px;
 }
 
 /***Portfolio Section***/
 
-#portfolio .img {
+#projects {
     background: url("resources/img/Backgrounds/water.jpg") center center/cover no-repeat fixed;
 }
 
@@ -149,55 +180,26 @@ img, iframe, video, .pback {
 .myProjects {
     font-family: 'Cinzel', serif;
     list-style-type: none;
-    margin-top: 50%;
     font-size: 24px;
     text-decoration: none !important;
     color: #000000;
-    padding-left: 0;
 }
 
-.myProjects a:hover {
+.myProjects .active-project {
     color: #1b6d85;
     font-size: 30px;
+    white-space: nowrap;
 }
 
 .changeableBackground {
-    height: 80%;
-    width: 60%;
-    background: url("resources/img/Backgrounds/Colchuck Lake (2).jpg") center center/cover no-repeat;
-    overflow: hidden;
+    height: 50vmin;
+    width: auto;
     box-shadow: -8px 8px 5px rgba(1, 1, 1, 0.57);
-}
-
-/* Changes the image displayed to the correct one when hovered */
-.sumofy {
-    background: url("resources/img/SumoBot/sumo.JPG") center center/cover no-repeat;
-    overflow: hidden;
-}
-
-.alexafy {
-    background: url("resources/img/alexa.jpg") center center/cover no-repeat;
-    overflow: hidden;
-}
-
-.cookiefy {
-    background: url("resources/img/cookietopper/cookietopperthumbnail.jpg") center center/cover no-repeat;
-    overflow: hidden;
-}
-
-.dispensery {
-    background: url("resources/img/PillDispenser/dispensery.jpg") center center/cover no-repeat;
-    overflow: hidden;
-}
-
-.spacify {
-    background: url("resources/img/spaceapps/planetpolluter.JPG") left center/cover no-repeat;
-    overflow: hidden;
 }
 
 /***Links***/
 
-.link, th {
+th {
     padding-left: 15px;
     font-family: 'Raleway', sans-serif;
     font-size: 20px;
@@ -212,46 +214,57 @@ img, iframe, video, .pback {
 
 /***Space Apps HTML***/
 
-#spaceappsimg .img {
+#spaceappsimg {
     background: url("resources/img/spaceapps/spaceback.jpg") center center/cover no-repeat fixed;
 }
 
 /***Cookie Topper HTML***/
 
-#cookieimg .img{
+#cookieimg {
     background: url("resources/img/Backgrounds/forbidden_city.jpg") center center/cover no-repeat fixed;
 }
 
 /***Alexa Skill HTML***/
 
-#alexaimg .img {
+#alexaimg {
     background: url("resources/img/Backgrounds/nh_beach.jpg") center center/cover no-repeat fixed;
 }
 
 /***Sumo Bot HTML***/
 
-#sumoimg .img {
+#sumoimg {
     background: url("resources/img/Backgrounds/tokyoskyline.jpg") center center/cover no-repeat fixed;
 }
 
 /***Automatic Pill Dispenser HTML***/
 
-.pillpic {
+.project-images {
     max-height: 100%;
     max-width: 100%;
     height: auto;
     width: auto;
 }
 
-iframe {
-    margin-left: 10%;
-    min-height: 250px;
-    min-width: 80%;
-    height: inherit;
-    width: auto;
+.video-container {
+    position: relative;
+    padding: 20%;
+    height: 0;
+    overflow: hidden;
 }
 
-#pilldispenserimg .img {
+.video-container iframe,
+.video-container object,
+.video-container video,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+#pilldispenserimg {
     background: url("resources/img/Backgrounds/greatwall.jpg") center center/cover no-repeat fixed;
 }
 
@@ -260,6 +273,27 @@ iframe {
 #blogimg .img {
     background: url("resources/img/Japan/meiji.jpg") center center/cover no-repeat fixed;
     top: 0;
+}
+
+article {
+    min-height: 100%;
+    margin-top: -50px;
+    padding-top: 50px !important;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #707070;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+}
+
+.dot:hover {
+    background-color: #000000;
 }
 
 article p {
@@ -289,7 +323,7 @@ article p {
     color: #ffffff !important;
 }
 
-.navbar-nav li a:hover, .navbar-nav li.active a {
+.navbar-nav li.active a.highlightable {
     background-color: #000000 !important;
 }
 
@@ -300,6 +334,31 @@ article p {
 
 .navbar ul {
     margin-right: 2.5%;
+}
+
+ul {
+    padding: 0;
+}
+
+.project-dropdown-content {
+    width: 100%;
+    display: none;
+    position: absolute;
+    z-index: 9999;
+    background-color: rgba(1, 1, 1, .1);
+}
+
+.project-dropdown:hover .project-dropdown-content {
+    display: block;
+}
+
+.project-dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
 }
 
 #mylogo {
@@ -339,10 +398,6 @@ footer {
     display: none;
 }
 
-.slideanim {
-    visibility: hidden;
-}
-
 .slide {
     animation-name: slide;
     -webkit-animation-name: slide;
@@ -376,58 +431,111 @@ footer {
 
 /***Size Definitions for Mobile***/
 
-@media screen and (max-width: 835px) {
-    p {
-        font-size: 17px;
-    }
-
-    .jumbotron {
-        padding-top: 20%;
-    }
-
-    .col-sm-4 {
-        text-align: center;
-        margin: 25px 0;
-    }
-
+@media screen and (max-width: 767px) {
     /* Make navbar visible */
     .navbar {
         background-color: rgb(36, 54, 63);
     }
 
-    /* Make images disappear on mobile */
-    .imgMe {
-        display: none;
+    #myNavbar, .nav {
+        width: 100vw;
+        margin-right: 0;
+        padding-right: 0;
     }
 
-    .changeableBackground {
-        visibility: hidden;
-        height: 0;
-    }
-
-    #myCarousel {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    iframe, .pillpic{
-        max-width: 90% !important;
-    }
-
-    .container-fluid h1 {
-        padding-top: 8%;
+    .project-dropdown-content a {
+        padding-left: 5%;
     }
 
     p {
-        font-size: 14px;
+        font-size: 2.3vh;
     }
 
-    .jumbotron .container {
-        padding-top: 50%;
+    .project-images {
+        margin-bottom: 5%;
     }
 
+    .home-section-body, .container-body {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .padder {
+        padding-top: 20px;
+    }
+
+    .changeableBackground {
+        width: 100%;
+        height: auto;
+    }
+
+    .work-experience-text {
+        padding-top: 5%;
+    }
+
+    .graph {
+        padding-top: 10%;
+        width: 130%;
+        margin-left: -15%;
+        height: auto;
+    }
+
+    .myProjects {
+        top: 50%;
+        left:0;
+        right:0;
+        margin-left:auto;
+        margin-right:auto;
+        position: absolute;
+    }
+
+    .work-experience {
+        text-align: center;
+    }
+    .work-experience img {
+        height: 15%;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 420px) {
     #mylogo {
         max-height: 100%;
+    }
+
+    p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-width: 900px) {
+    .jumbotron .container {
+        margin-top: 20vh;
+    }
+
+    .headshot {
+        height: 60%;
+    }
+
+    .graph {
+        height: auto;
+        width: 90%;
+    }
+
+    .work-experience {
+        padding: 0;
+        text-align: center;
+    }
+
+    .work-experience img {
+        height: 25%;
+        width: auto;
+    }
+
+    .changeableBackground {
+        max-width: 100%;
+        max-height: 50vmin;
+        height: auto;
+        width: auto;
     }
 }

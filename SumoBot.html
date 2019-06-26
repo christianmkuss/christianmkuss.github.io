@@ -27,7 +27,7 @@
         gtag('config', 'UA-112798738-1');
     </script>
 </head>
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<body>
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -40,19 +40,28 @@
     <div class="collapse navbar-collapse navbar-expand-lg" id="myNavbar">
         <ul class="nav navbar-nav navbar-right" id="navbuttons">
             <li><a href="index.html#about">ABOUT</a></li>
-            <li><a href="index.html#portfolio">PORTFOLIO</a></li>
+            <li><a href="index.html#experience">EXPERIENCE</a></li>
+            <li class="project-dropdown">
+                <a href="index.html#projects">PROJECTS</a>
+                <div class="project-dropdown-content">
+                    <a href="PlanetPolluter.html">PLANET POLLUTER</a>
+                    <a href="PillDispenser.html">SMART PILL DISPENSER</a>
+                    <a href="SumoBot.html">SUMO BOT</a>
+                    <a href="CookieTopper.html">COOKIE TOPPER</a>
+                </div>
+            </li>
             <li><a href="Blog.html">BLOG</a></li>
+            <li><a href="resources/Kuss_Resume.pdf" target="_blank">R&#201;SUM&#201;</a></li>
         </ul>
     </div>
 </nav>
 <div class="container-fluid" id="sumoimg">
-    <div class="img"></div>
+    <div class="container container-body">
     <h1 class="text-center">
         Sumo Bot
     </h1>
     <div class="row">
         <div class="col-sm-10 col-sm-offset-1">
-            <div class="pback">
                 <p>
                     This project was an assignment for Cornerstone of Engineering. It was completed by Julian Lechner,
                     Reed Kellett, Stephen Zhou, and myself. This assignment proved to be much more challenging than face
@@ -83,12 +92,12 @@
                     After all the smoke and dust settled, our robot, The Busa, came out on top.
                 </p>
             </div>
-        </div>
     </div>
     <div class="row">
-        <div class="col-sm-6 col-sm-offset-3">
+        <div class="col-sm-8 col-sm-offset-2 video-container">
             <video src="resources/img/SumoBot/demo_vid.mov" controls></video>
         </div>
+    </div>
     </div>
 </div>
 <footer class="text-center">

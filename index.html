@@ -9,23 +9,26 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Cinzel|Raleway" rel="stylesheet">
-    <script src="style.js"></script>
     <link rel="stylesheet" href="style.css">
+    <script src="style.js"></script>
     <link rel="icon" href="resources/img/HomePage/mylogo.png">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112798738-1"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
+      window.dataLayer = window.dataLayer || [];
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
+      function gtag() {
+        dataLayer.push(arguments);
+      }
 
-        gtag('js', new Date());
-        gtag('config', 'UA-112798738-1');
+      gtag('js', new Date());
+      gtag('config', 'UA-112798738-1');
     </script>
+    <script>$(function () {
+      scrollProjectImage();
+    })</script>
 </head>
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60" class="dynamic">
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -33,13 +36,26 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#myPage"><img src="resources/img/HomePage/mylogo.png" id="mylogo"></a>
+        <a class="navbar-brand" href="#myPage">
+            <img src="resources/img/HomePage/mylogo.png" alt="Home Page" id="mylogo" />
+        </a>
+
     </div>
-    <div class="collapse navbar-collapse navbar-expand-lg" id="myNavbar">
+    <div class="navbar-expand-lg" id="myNavbar">
         <ul class="nav navbar-nav navbar-right" id="navbuttons">
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#portfolio">PORTFOLIO</a></li>
+            <li><a class="highlightable" href="#about">ABOUT</a></li>
+            <li><a class="highlightable" href="#experience">EXPERIENCE</a></li>
+            <li class="project-dropdown">
+                <a class="highlightable" href="#projects">PROJECTS</a>
+                <div class="project-dropdown-content">
+                    <a href="PlanetPolluter.html">PLANET POLLUTER</a>
+                    <a href="PillDispenser.html">SMART PILL DISPENSER</a>
+                    <a href="SumoBot.html">SUMO BOT</a>
+                    <a href="CookieTopper.html">COOKIE TOPPER</a>
+                </div>
+            </li>
             <li><a href="Blog.html">BLOG</a></li>
+            <li><a href="resources/Kuss_Resume.pdf" target="_blank">R&#201;SUM&#201;</a></li>
         </ul>
     </div>
 </nav>
@@ -60,64 +76,71 @@
         </div>
     </div>
 </div>
-<a name="about">
-    <div id="about">
-        <div class="container-fluid">
-            <div class="img"></div>
-            <div class="text-center">
-                <h1>About Me</h1>
-            </div>
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="pback">
-                        <p>Hi, I'm Christian Kuss and welcome to my website!</p>
-                        <p>I'm a sophomore electrical and computer engineering student at Northeastern University in
-                            Boston,
-                            Massachusetts.
-                            Some of my hobbies include running, building things, hiking, and spending time with my
-                            friends.
-                        </p>
-                        <p>This website will be home of all past, current, and hopefully future projects I will work on.
-                            Feel free to look around and explore.</p>
-                        <p>I can be reached at <a href="mailto:christianmkuss@gmail.com">christianmkuss@gmail.com</a>
-                            or by phone at <a href="tel:+13608656302">360.865.6302</a></p>
-                        <p>And check out my R&eacute;sum&eacute; coded in Latex.</p>
-                        <div class="row text-center">
-                            <a href="resources/Kuss_Resume.pdf" target="_blank">
-                                <button type="button" class="btn btn-primary btn-lg">R&eacute;sum&eacute;</button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="imgMe"></div>
-                </div>
-            </div>
+<div id="about" class="container-fluid home-sections">
+    <div class="container home-section-body">
+        <div class="text-center">
+            <h1>About Me</h1>
+        </div>
+        <div class="row text-center">
+            <img src="resources/img/HomePage/christiankuss_close.jpg" alt="pic of me" class="headshot" />
+        </div>
+        <div class="row text-center" style="padding: 0 10%">
+            <p>Hi, I'm Christian Kuss and welcome to my website!</p>
+            <p>I'm a 3rd year electrical and computer engineering student at Northeastern University in Boston,
+                Massachusetts. Some of my hobbies include running, building things, hiking, and spending time with my
+                friends.
+            </p>
+            <p>This website will be home of all past, current, and hopefully future projects I will work on.
+                Feel free to look around and explore.</p>
+            <p>I can be reached at <a href="mailto:christianmkuss@gmail.com">christianmkuss@gmail.com</a>
+                or by phone at <a href="tel:+13608656302">360.865.6302</a></p>
         </div>
     </div>
-</a>
-<a name="portfolio">
-    <div id="portfolio">
-        <div class="container-fluid">
-            <div class="img"></div>
-            <div class="text-center">
-                <h1>Portfolio</h1>
+</div>
+<div id="experience" class="container-fluid home-sections">
+    <div class="container home-section-body">
+        <div class="text-center">
+            <h1>Experience</h1>
+        </div>
+        <div class="row" style="padding-bottom: 2%">
+            <div class="col-sm-2 col-sm-offset-2 work-experience pad">
+                <img src="resources/img/tablecheck_logo.png" alt="tablecheck logo" />
             </div>
-            <div class="row">
-                <div class="col-sm-4 text-center">
-                    <ul class="myProjects">
-                        <li><a class="myProjects" href="PlanetPolluter.html" id="space">Planet Polluter</a></li>
-                        <li><a class="myProjects" href="PillDispenser.html" id="pilldispenser">Smart Pill Dispenser</a>
-                        <li><a class="myProjects" href="SumoBot.html" id="sumo">Sumo Bot</a></li>
-                        <li><a class="myProjects" href="CookieTopper.html" id="cookie">Cookie Topper</a></li>
-                        <li><a class="myProjects" href="Alexa.html" id="alexa">Alexa Skill</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-8 changeableBackground" id="one"></div>
+            <div class="col-sm-7">
+                <p class="work-experience-text">
+                    For my first co-op I had the opportunity to travel to Tokyo, Japan and work as a software
+                    engineer at TableCheck. While there, I worked on several backend and frontend projects focusing on
+                    implementing a microservice architecture.
+                </p>
             </div>
         </div>
+        <div class="row text-center">
+            <figure>
+                <embed class='graph'
+                       src="https://wakatime.com/share/@christianmkuss/aa336cf5-9bf8-4355-bb2b-11039bea83c1.svg" />
+            </figure>
+        </div>
     </div>
-</a>
+</div>
+<div id="projects" class="container-fluid home-sections">
+    <div class="container home-section-body">
+        <div class="text-center">
+            <h1>Projects</h1>
+        </div>
+        <div class="row text-center" style="padding-bottom: 3%;">
+            <img id="project-image" src="resources/img/project-thumbnails/space.jpg" alt="project images"
+                 class="changeableBackground" />
+        </div>
+        <div class="row text-center">
+            <ul class="myProjects">
+                <li><a class="active-project" href="PlanetPolluter.html" id="space">Planet Polluter</a></li>
+                <li><a href="PillDispenser.html" id="pill-dispenser">Smart Pill Dispenser</a>
+                <li><a href="SumoBot.html" id="sumo">Sumo Bot</a></li>
+                <li><a href="CookieTopper.html" id="cookie">Cookie Topper</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
 <footer class="text-center">
     <a href="#myPage" title="To Top">
         <span class="glyphicon glyphicon-chevron-up"></span>

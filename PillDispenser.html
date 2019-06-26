@@ -16,19 +16,19 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112798738-1"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
+      window.dataLayer = window.dataLayer || [];
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
+      function gtag() {
+        dataLayer.push(arguments);
+      }
 
-        gtag('js', new Date());
+      gtag('js', new Date());
 
-        gtag('config', 'UA-112798738-1');
+      gtag('config', 'UA-112798738-1');
     </script>
 </head>
 
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<body id="myPage">
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -41,73 +41,77 @@
     <div class="collapse navbar-collapse navbar-expand-lg" id="myNavbar">
         <ul class="nav navbar-nav navbar-right" id="navbuttons">
             <li><a href="index.html#about">ABOUT</a></li>
-            <li><a href="index.html#portfolio">PORTFOLIO</a></li>
+            <li><a href="index.html#experience">EXPERIENCE</a></li>
+            <li class="project-dropdown">
+                <a href="index.html#projects">PROJECTS</a>
+                <div class="project-dropdown-content">
+                    <a href="PlanetPolluter.html">PLANET POLLUTER</a>
+                    <a href="PillDispenser.html">SMART PILL DISPENSER</a>
+                    <a href="SumoBot.html">SUMO BOT</a>
+                    <a href="CookieTopper.html">COOKIE TOPPER</a>
+                </div>
+            </li>
             <li><a href="Blog.html">BLOG</a></li>
+            <li><a href="resources/Kuss_Resume.pdf" target="_blank">R&#201;SUM&#201;</a></li>
         </ul>
     </div>
 </nav>
 <div class="container-fluid" id="pilldispenserimg">
-    <div class="img"></div>
-    <h1 class="text-center">
-        Automatic Pill Dispenser
-    </h1>
-    <div class="row">
-        <br>
-        <br>
-        <div class="col-sm-5">
-            <iframe src="https://www.youtube.com/embed/GO-83smf9rI?rel=0" frameborder="0"
-                    allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-        <div class="col-sm-7">
-            <div class="pback">
-                <p>
-                    Welcome to the Smart Automatic Pill Dispenser. This project was completed by Matthew Swenson, Oscar
-                    Chen, and myself for the second half of our Cornerstone of Engineering class. The prompt for this
-                    project was very open ended stating, "Build something robotic that meets a need." In response to
-                    this, we flocked to the issue of elderly patients (or people in general) forgetting to take
-                    their medication. With the idea of aiding in pill deliverance, we set off.
-                </p>
+    <div class="container container-body">
+        <h1 class="text-center">Automatic Pill Dispenser</h1>
+        <div class="row">
+            <div class="col-sm-10 col-sm-offset-1 video-container">
+                <iframe src="https://www.youtube.com/embed/GO-83smf9rI?rel=0" allow="autoplay; encrypted-media"
+                        allowfullscreen></iframe>
             </div>
         </div>
-    </div>
-    <br>
-    <div class="row">
-        <br>
-        <br>
-        <div class="col-sm-8">
-            <div class="pback">
-                <p>
-                    Our final project turned out much better than we had anticipated and we decided to enter it into
-                    some
-                    online contests, one of which was the China-US Young Makers Competition on Hackster.io. Months later
-                    we
-                    had forgotten about the contest and thought nothing of it. Until one day in mid July we found out
-                    that
-                    our Automatic Pill Dispenser was voted in the top 10 projects and we would be going to Beijing,
-                    China!
-                </p>
+        <div class="row">
+            <p class="col-sm-10 col-sm-offset-1">
+                Welcome to the Smart Automatic Pill Dispenser. This project was completed by Matthew Swenson,
+                Oscar
+                Chen, and myself for the second half of our Cornerstone of Engineering class. The prompt for
+                this
+                project was very open ended stating, "Build something robotic that meets a need." In response to
+                this, we flocked to the issue of elderly patients (or people in general) forgetting to take
+                their medication. With the idea of aiding in pill deliverance, we set off.
+            </p>
+        </div>
+        <div class="row">
+            <p class="col-sm-10 col-sm-offset-1">
+                Our final project turned out much better than we had anticipated and we decided to enter it into
+                some
+                online contests, one of which was the China-US Young Makers Competition on Hackster.io. Months
+                later
+                we
+                had forgotten about the contest and thought nothing of it. Until one day in mid July we found
+                out
+                that
+                our Automatic Pill Dispenser was voted in the top 10 projects and we would be going to Beijing,
+                China!
+            </p>
+        </div>
+        <div class="row">
+            <div class="col-sm-5 col-sm-offset-1">
+                <img src="resources/img/PillDispenser/pilldispensersetup.JPG" alt="3D Printed Pill Dispenser"
+                     class="project-images">
+            </div>
+            <div class="col-sm-5">
+                <img src="resources/img/PillDispenser/chinaTeam.jpg" alt="Us in china" class="project-images">
             </div>
         </div>
-        <div class="col-sm-4">
-            <img src="resources/img/PillDispenser/pilldispensersetup.JPG" alt="3D Printed Pill Dispenser"
-                 class="pillpic">
-        </div>
-    </div>
     <div class="row">
-        <br>
-        <div class="col-sm-4">
-            <img src="resources/img/PillDispenser/chinaTeam.jpg" alt="Us in china" class="pillpic">
-        </div>
-        <div class="col-sm-8">
-            <div class="pback">
+        <div class="col-sm-10 col-sm-offset-1">
                 <p>
                     Almost everything we used in our initial prototype was borrowed from Northeastern University's
-                    engineering program which meant we would have to buy the parts and rebuild. Fortunately, two of the
-                    three team members lived somewhat close so they were able to meet up and build much of the frame for
+                    engineering program which meant we would have to buy the parts and rebuild. Fortunately, two of
+                    the
+                    three team members lived somewhat close so they were able to meet up and build much of the frame
+                    for
                     the new version.
                 </p>
                 <p>
-                    In Beijing, we had 24 hours to rebuild our project and test everything out. We learned a lot from
+                    In Beijing, we had 24 hours to rebuild our project and test everything out. We learned a lot
+                    from
                     our original prototype and decided to make improvements.
                 </p>
                 <p>Some of the key features are:</p>
@@ -120,29 +124,26 @@
                     <li><p>Implemented Speaker Reminder</p></li>
                     <li><p>Up to Six Different Types of Pills</p></li>
                 </ul>
-                <div class="row text-center">
+                <div class="row text-center logo">
                     <a target="_blank" href="https://github.com/christianmkuss/PIllDispenser_v2.0">
-                        <button type="button" class="btn btn-primary btn-lg">Github Page</button>
+                        <img src="resources/icons/social-github.png" alt="Pill Dispenser Repository">
                     </a>
                 </div>
-            </div>
         </div>
     </div>
     <div class="row">
-        <div class="col-sm-7 pback">
-            <p>Here are my teammates profiles.</p>
+        <div class="col-sm-10 col-sm-offset-1 text-center">
+            <p>Here are my teammates profiles:</p>
             <p>
-                Matthew Swenson: <a href="https://www.linkedin.com/in/mattswens/" class="link" target="_blank">https://www.linkedin.com/in/mattswens/</a>
+                Matthew Swenson: <a href="http://matthew-swenson.surge.sh/" class="link" target="_blank">http://matthew-swenson.surge.sh/</a>
             </p>
             <p>
-                Oscar Chen: <a href="https://www.linkedin.com/in/oscarmyt/" class="link" target="_blank">https://www.linkedin.com/in/oscarmyt/</a>
+                Oscar Chen: <a href="https://www.oscarchen.info" class="link" target="_blank">https://www.oscarchen.info</a>
             </p>
         </div>
     </div>
-    <br>
-    <br>
 </div>
-
+</div>
 <footer class="text-center">
     <a href="#myPage" title="To Top">
         <span class="glyphicon glyphicon-chevron-up"></span>
