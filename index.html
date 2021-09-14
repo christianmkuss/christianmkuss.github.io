@@ -39,9 +39,14 @@
         <a class="navbar-brand" href="#myPage">
             <img src="resources/img/HomePage/mylogo.png" alt="Home Page" id="mylogo" />
         </a>
-
     </div>
     <div class="navbar-expand-lg" id="myNavbar">
+        <div class="alert alert-info alert-dismissible" role="alert">
+            Website is under major construction, but feel free to look around!
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
         <ul class="nav navbar-nav navbar-right" id="navbuttons">
             <li><a class="highlightable" href="#about">ABOUT</a></li>
             <li><a class="highlightable" href="#experience">EXPERIENCE</a></li>
@@ -82,12 +87,12 @@
             <h1>About Me</h1>
         </div>
         <div class="row text-center">
-            <img src="resources/img/HomePage/christiankuss_close.jpg" alt="pic of me" class="headshot" />
+            <img src="resources/img/HomePage/kuss_headshot.jpg" alt="Headshot of Christian Kuss" class="headshot" />
         </div>
         <div class="row text-center" style="padding: 0 10%">
             <p>Hi, I'm Christian Kuss and welcome to my website!</p>
-            <p>I'm a 3rd year electrical and computer engineering student at Northeastern University in Boston,
-                Massachusetts. Some of my hobbies include running, building things, hiking, and spending time with my
+            <p>I'm a 5th year electrical and computer engineering student at Northeastern University in Boston,
+                Massachusetts. Some of my hobbies include running, lifting, building things, hiking, and spending time with my
                 friends.
             </p>
             <p>This website will be home of all past, current, and hopefully future projects I will work on.
@@ -103,22 +108,43 @@
             <h1>Experience</h1>
         </div>
         <div class="row" style="padding-bottom: 2%">
-            <div class="col-sm-2 col-sm-offset-2 work-experience pad">
+            <div class="col-sm-2 work-experience pad">
+                <img src="resources/img/microsoft_logo.png" alt="microsoft logo" />
+            </div>
+            <div class="col-sm-9">
+                <p class="work-experience-text" style="padding-top: 2%">
+                    I had the amazing opportunity to intern at Microsoft working on the Azure Storage team. While here I
+                    learned a lot about distributed systems and what goes into every layer when storing data. I specifically
+                    worked on optimizing the algorithm for cold data in zone-redundant storage. The way the infrastructure
+                    is set up, there is an optimization that can cut bandwidth cost by 2/3 by conducting erasure coding
+                    in a multi-step fashion.
+                </p>
+            </div>
+        </div>
+        <div class="row" style="padding-bottom: 2%">
+            <div class="col-sm-2 work-experience pad">
+                <img src="resources/img/amazon_robotics_logo.png" alt="amazon robotics logo" />
+            </div>
+            <div class="col-sm-9">
+                <p class="work-experience-text" style="padding-top: 2%">
+                    Starting in January 2020, I was able to work at Amazon Robotics as a software engineer co-op. Here,
+                    my work consisted of adding features to a gradle CLI project that is used across several teams and
+                    creating a standalone image generator for a computer vision training set. The simulation was built in
+                    Unity and bundled up into a GPU-enabled Docker image that then was created as a queryable AWS Batch process.
+                </p>
+            </div>
+        </div>
+        <div class="row" style="padding-bottom: 2%">
+            <div class="col-sm-2 work-experience pad">
                 <img src="resources/img/tablecheck_logo.png" alt="tablecheck logo" />
             </div>
-            <div class="col-sm-7">
-                <p class="work-experience-text">
+            <div class="col-sm-9">
+                <p class="work-experience-text" style="padding-top: 2%">
                     For my first co-op I had the opportunity to travel to Tokyo, Japan and work as a software
                     engineer at TableCheck. While there, I worked on several backend and frontend projects focusing on
                     implementing a microservice architecture.
                 </p>
             </div>
-        </div>
-        <div class="row text-center">
-            <figure>
-                <embed class='graph'
-                       src="https://wakatime.com/share/@christianmkuss/aa336cf5-9bf8-4355-bb2b-11039bea83c1.svg" />
-            </figure>
         </div>
     </div>
 </div>
